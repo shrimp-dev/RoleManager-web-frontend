@@ -8,14 +8,14 @@ import {
   InputStructure,
   LoginContentContainer,
   RegisterContentContainer,
-} from './style'
+} from './styles'
 import { IconArrowLogin } from "../../components/Icons";
 
 export default function Login() {
     function login(){
         route.push('/')
     }
-
+    const text: {} = Language
     return (
     <Background>
         <RegisterContentContainer>
@@ -23,14 +23,14 @@ export default function Login() {
         </RegisterContentContainer>
         <LoginContentContainer>
         <Container>
-            <h2>{Language.pt_br.LoginTitle}</h2>
+            <h2>Entre com a sua conta</h2>
             <InputContainer>
             <InputStructure>
-                <label>{Language.pt_br.Username}</label>
+                <label>Email</label>
                 <input type="text"></input>
             </InputStructure>
             <InputStructure>
-                <label>{Language.pt_br.Password}</label>
+                <label>Senha</label>
                 <input type="password"></input>
             </InputStructure>
             </InputContainer>
