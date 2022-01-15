@@ -1,0 +1,17 @@
+{
+    "pt_br": {
+
+        "ProfileButtonText": "Perfil",
+        "Username": "Email", 
+        "Password": "Senha",
+        "LoginTitle": "Entre com a sua conta"
+
+
+    },
+    "en_us":{
+        "ProfileButtonText": "Profile",
+        "Username": "Email", 
+        "Password": "Password",
+        "LoginTitle": "Enter with your account"
+    }
+}
