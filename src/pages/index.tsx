@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 
 import Layout from '../components/Layout'
 import Navbar from '../components/Navbar'
-import UserCard from '../components/UserCard.tsx'
+import UserCard from '../components/UserCard'
 
 const Home: NextPage = () => {
   return (

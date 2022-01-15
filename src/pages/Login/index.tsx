@@ -8,7 +8,7 @@ import {
   InputStructure,
   LoginContentContainer,
   RegisterContentContainer,
-} from './style'
+} from './styles'
 import { IconArrowLogin } from "../../components/Icons";
 
 export default function Login() {
