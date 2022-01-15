@@ -1,9 +1,18 @@
-import React from 'react'
+import {Title} from './style'
 
-export default function TitlePage() {
+type TitlePageProps = {
+    title:string
+    row?:boolean;
+}
+
+export default function TitlePage(props:TitlePageProps) {
+    const {title,row} = props
     return (
-        <div>
-            
-        </div>
+        <Title>
+            <h1>{title}</h1>
+            {row&& (
+                <hr></hr>
+            )}
+        </Title>
     )
 }
