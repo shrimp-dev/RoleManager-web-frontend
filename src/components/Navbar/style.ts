@@ -30,6 +30,6 @@ export const Nav = styled.aside`
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 3rem;
+        gap: 8vh;
     }
 `;
