@@ -26,4 +26,10 @@ export const BtnContainer = styled.div`
         background-color: var(--violet-blue);
         color: var(--white);
     }
+
+    @media(max-width: 500px) {
+        button{
+            width: 45vw;
+        }
+    }
 `

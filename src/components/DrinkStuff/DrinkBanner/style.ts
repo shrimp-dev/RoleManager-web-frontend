@@ -5,4 +5,8 @@ export const Banner = styled.div`
     width: 85%;
     border-radius: 10px;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
 `

@@ -6,11 +6,13 @@ type DrinkOpenCardProps ={
 }
 
 export default function DrinkOpenCard(props:DrinkOpenCardProps) {
+    const {drinksOpen} = props
+
     return (
         <Card>
             <header><h1>Em Aberto</h1></header>
-            <div>
-                <h1 className='DrinksOpen'>{props.drinksOpen}</h1>
+            <div className='ContentCard'>
+                <h1 className='DrinksOpen'>{drinksOpen<10&&0}{drinksOpen}</h1>
                 <Button text='Abrir nova' type='Orange'/>
             </div>
         </Card>
