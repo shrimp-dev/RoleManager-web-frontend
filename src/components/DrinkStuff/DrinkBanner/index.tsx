@@ -1,9 +1,10 @@
+import { IconTwoDrinks } from '../../Icons'
 import {Banner} from './style'
 
 export default function DrinkBanner() {
     return (
         <Banner>
-            Isso é um banner
+            {IconTwoDrinks('200','200')}
         </Banner>
     )
 }
