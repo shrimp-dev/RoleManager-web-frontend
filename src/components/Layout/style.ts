@@ -13,6 +13,7 @@ export const LayoutDiv = styled.div`
         gap: 2rem;
         max-height: 100vh;
 
-        overflow: scroll;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 `;
