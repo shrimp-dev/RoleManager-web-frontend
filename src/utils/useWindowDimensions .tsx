@@ -1,11 +1,15 @@
 import { useState, useEffect } from 'react';
 
 function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height
-  };
+  if (global.window) {
+    const { innerWidth: width, innerHeight: height } = global.window;
+
+    return {
+      width,
+      height
+    };
+  }
+  return {width:500,height:500};
 }
 
 export default function useWindowDimensions() {
