@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 export default function Drinks() {
     return (
         <Layout title="Suas Bebidas" row>
-            <div style={{width:'100%',display:'flex',flexDirection:'column',alignItems:'center'}}>
+            <div style={{width:'100%',display:'flex',flexDirection:'column',alignItems:'center',gap:'20px'}}>
                 <DrinkBanner/>
                 <div>
                     Pagina de drinks

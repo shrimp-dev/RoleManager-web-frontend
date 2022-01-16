@@ -9,8 +9,8 @@ export default function DrinkBanner() {
 
     function renderIcon(){
         if(width>1020)
-            return <div>{IconTwoDrinks("30rem","45vh")}</div>
-        return <div>{IconTwoDrinks("50vw","45vh")}</div>
+            return <div>{IconTwoDrinks("25rem","45vh")}</div>
+        return <div>{IconTwoDrinks("40vw","45vh")}</div>
     }
 
     return (
@@ -18,8 +18,10 @@ export default function DrinkBanner() {
             <div className='IconContent'> 
                 {renderIcon()}
             </div>
-            <DrinkOpenCard drinksOpen={6}/>
-            <DrinkPayCard drinksCloseds={6}/>
+            <div className='CardContent'>
+                <DrinkOpenCard drinksOpen={6}/>
+                <DrinkPayCard drinksCloseds={6}/>
+            </div>
         </Banner>
     )
 }

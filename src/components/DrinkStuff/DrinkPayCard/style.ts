@@ -10,6 +10,9 @@ export const Card = styled.div`
     padding: 1rem;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    max-height: 300px;
+    justify-content: center;
+    
     .ContentCard{
         display: flex;
         flex-direction: column;
@@ -19,5 +22,15 @@ export const Card = styled.div`
     .DrinksClose{
         font-weight: 700;
         font-size: 96px;
+    }
+
+    @media(max-width: 1266px) {
+        background:none;
+    }
+
+    @media(max-width:791px){
+        background: linear-gradient(152.3deg, #5D5FEF 7.75%, rgba(93, 95, 239, 0.88) 91.39%);
+        border-radius: 10px;
+        width: 100%;
     }
 `
