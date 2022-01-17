@@ -6,7 +6,7 @@ export const TableContainer = styled.div`
     flex-direction: column;
     align-items: center;
     color: var(--dark);
-    
+
     .TitleTable{
         font-weight: 500;
         font-size: 18px;
@@ -23,6 +23,7 @@ export const TableContainer = styled.div`
 
     th{
         border-bottom: 0.5px solid #C4C4C4;
+        border-top: none;
         font-weight: 400;
     }
     
@@ -34,4 +35,5 @@ export const TableContainer = styled.div`
         cursor: pointer;
         border-bottom: 0.5px solid #C4C4C4;
     }
+
 `
