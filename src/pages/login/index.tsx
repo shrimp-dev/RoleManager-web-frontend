@@ -7,7 +7,7 @@ import {
   InputContainer,
   InputStructure,
   LoginContentContainer,
-  RegisterContentContainer,
+  LeftSide,
 } from './styles'
 import { IconArrowLogin } from "../../components/Icons";
 
@@ -15,12 +15,14 @@ export default function Login() {
     function login(){
         route.push('/')
     }
-    const text: {} = Language
+    function register(){
+        route.push('/register')
+    }
     return (
     <Background>
-        <RegisterContentContainer>
+        <LeftSide>
         <h2>Register</h2>
-        </RegisterContentContainer>
+        </LeftSide>
         <LoginContentContainer>
         <Container>
             <h2>Entre com a sua conta</h2>
@@ -40,7 +42,7 @@ export default function Login() {
             <button onClick={()=>login()}>{IconArrowLogin}</button>
             <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
                 <p>Recebeu um convite e ainda não se cadastrou?</p>
-                <p>Clique Aqui</p>
+                <p onClick={()=> register()}>Clique Aqui</p>
             </div>
             
         </Container>

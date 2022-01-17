@@ -9,8 +9,8 @@ const Home: NextPage = () => {
 
     <Layout title='Membros' row>
       <div style={{display:"flex",alignItems:"center",justifyContent:"center",flexDirection:'column'}}>
-        <h1>Hello World, Patrick</h1>
-        <UserCard name='Shrimp' id={1} path='https://media.istockphoto.com/photos/shrimp-picture-id512284984' bgImg='https://media.istockphoto.com/photos/shrimp-picture-id512284984'/>
+        
+        <UserCard name='Shrimp' id={1} path='https://media.discordapp.net/attachments/580125063186087966/932695936499585145/97647654.png' bgImg='https://th.bing.com/th/id/OIP.rG9GfWZEI3tsie-Ex8st3QHaE8?pid=ImgDet&rs=1'/>
       </div>
     </Layout>
   )

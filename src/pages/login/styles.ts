@@ -6,7 +6,7 @@ export const Background = styled.div`
   min-height: 100vh;
   display: flex;
 `;
-export const RegisterContentContainer = styled.div`
+export const LeftSide = styled.div`
   background-color: var(--white);
   width: 61vw;
   min-height: 100vh;
@@ -41,6 +41,7 @@ export const Container = styled.div`
       height: auto;
       border: none;
       background-color: inherit;
+      cursor: pointer;
     }
     border: none;
     outline: none;
@@ -58,6 +59,7 @@ export const Container = styled.div`
       margin-top: 0;
       font-weight: 700;
       color: var(--violet-blue);
+      cursor: pointer;
     }
   }
 `;
