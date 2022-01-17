@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
         --white: #FFF;
         --violet-blue: #5D5FEF;
         --red:#F61067;
+        --orange:#FF674D;
     }
 a {
   text-decoration: none;
