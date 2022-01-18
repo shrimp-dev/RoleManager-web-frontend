@@ -28,4 +28,14 @@ export const LayoutDiv = styled.div`
     .ContentBanner .TitleLayout{
         margin-left:2rem ;
     }
+
+    @media(max-width:500px){
+        .TitleLayout{
+            display: none;
+        }
+        .ContentBanner{
+        gap: .2rem;
+        padding: 0;
+    }
+    }
 `;
