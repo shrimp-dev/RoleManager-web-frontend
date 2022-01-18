@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Language from "../../../Language.json";
 import { Card } from "./style";
+import Link from "next/link";
 
 export default function UserCard(props:{name:string,path:string, bgImg: string, id:number}) {
     const {name,path,bgImg,id} = props;  
@@ -11,9 +12,11 @@ export default function UserCard(props:{name:string,path:string, bgImg: string, 
             <div className="CardContent">
               <img className="ProfilePicture" src={path}></img>
               <p className="ProfileName">{name}</p>
-              <button className="CardProfileButton">
-                Profile
-              </button>
+              <Link href={`/profile/${id}`} passHref>
+                <button className="CardProfileButton">
+                  Profile
+                </button>
+              </Link>
             </div>
           </div>
         </Card>
