@@ -30,16 +30,29 @@ export default function Profile() {
         */
 
         if(id){
-            let userAux:User={
-                id:+id,
-                name:"Joseph Joestar, O filha da puta",
-                drinks:[],
-                description:'Um cara muito pica... que trai a mulher as vezes',
-                profileImgPath:'https://cdn.discordapp.com/attachments/469630958811742212/933113751626997800/maxresdefault.png',
-                bannerImgPath:'https://cdn.discordapp.com/attachments/469630958811742212/933114011061473290/d61s52c-e43f8972-3e83-4fbc-804b-abaed608f0ae.png'
+            if(id=='1'){
+                let userAux:User={
+                    id:+id,
+                    name:"Joseph Joestar, O filha da puta",
+                    drinks:[],
+                    description:'Um cara muito pica... que trai a mulher as vezes',
+                    profileImgPath:'https://cdn.discordapp.com/attachments/469630958811742212/933113751626997800/maxresdefault.png',
+                    bannerImgPath:'https://cdn.discordapp.com/attachments/469630958811742212/933114011061473290/d61s52c-e43f8972-3e83-4fbc-804b-abaed608f0ae.png'
+                }
+                setUser(userAux)
+            }else{
+                let userAux:User={
+                    id:+id,
+                    name:"Jolyne Kujo, A NÃO pior jojo",
+                    drinks:[],
+                    description:'Jojo mais underrated da historia',
+                    profileImgPath:'https://cdn.discordapp.com/attachments/469630958811742212/933154900773314611/51245626081fab919cffcd5ac31287d06b0a61bdr1-667-606v2_00.png',
+                    bannerImgPath:'https://cdn.discordapp.com/attachments/469630958811742212/933157306634477669/jojos-bizzare-adventur-part-6-stone-ocean.png'
+                }
+                setUser(userAux)
             }
 
-            setUser(userAux)
+            
             if(id==='1'){
                 setIsVisitant(false);
             }
