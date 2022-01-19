@@ -2,6 +2,8 @@ import { useRouter } from 'next/router'
 import { useEffect,useState } from 'react';
 import Button from '../../components/Button';
 import Layout from '../../components/Layout';
+import DebitUserList from '../../components/ProfileStuff/DebitUserList';
+import DrinkUserList from '../../components/ProfileStuff/DrinkUserList';
 import { User } from '../../models/types';
 import {ProfileContainer} from './style'
 
@@ -39,12 +41,12 @@ export default function Profile() {
 
             setUser(userAux)
             if(id==='1'){
-                setIsVisitant(true);
+                setIsVisitant(false);
             }
         }
         setLoaded(true);
 
-    },[])
+    },[id])
 
 
     return (
@@ -52,11 +54,21 @@ export default function Profile() {
             {(loaded&&user)&&(
                 <ProfileContainer>
                     <div className='bannerUser' style={{backgroundImage : `url(${user.bannerImgPath}`}}></div>
-                    <div className='ProfileContent'>
-                    <img src={user.profileImgPath} className='ProfileImg' alt='imgProfile'/>
-                        <h1>{user.name}</h1>
-                        <p>{user.description}</p>
-                        <Button type='Blue' text='Editar Perfil'/>
+
+                    <div className='ProfileBody'>
+                        <div className='ProfileContent'>
+                            <img src={user.profileImgPath} className='ProfileImg' alt='imgProfile'/>
+                            <h1>{user.name}</h1>
+                            <div style={{display:'flex',flexDirection:'column',alignItems:'center',gap:'.55rem'}}>
+                                <p>{user.description}</p>
+                                {!isVisitant&&<Button type='Blue' text='Editar Perfil'/>}
+                            </div>
+                        </div>
+
+                        <div className='ListProfileContent'>
+                            <DrinkUserList />
+                            <DebitUserList />
+                        </div>
                     </div>
                 </ProfileContainer>
             )}

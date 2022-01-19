@@ -36,6 +36,6 @@ export const LayoutDiv = styled.div`
         .ContentBanner{
         gap: .2rem;
         padding: 0;
-    }
+        }
     }
 `;
