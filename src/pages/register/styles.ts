@@ -19,7 +19,7 @@ h1{
       color: var(--dark);
   }
   `
-  export const FormContainer = styled.div`
+  export const FormContainer = styled.form`
   width: 80%;
   display: flex;
   flex-direction: column;
