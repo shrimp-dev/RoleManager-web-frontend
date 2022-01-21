@@ -58,6 +58,7 @@ export const Container = styled.div`
       margin-top: 0;
       font-weight: 700;
       color: var(--violet-blue);
+      cursor: pointer;
     }
   }
 `;

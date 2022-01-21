@@ -10,10 +10,13 @@ import {
   RegisterContentContainer,
 } from './styles'
 import { IconArrowLogin } from "../../components/Icons";
-
+  
 export default function Login() {
     function login(){
         route.push('/')
+    }
+    function register(){
+        route.push('/register')
     }
     const text: {} = Language
     return (
@@ -40,7 +43,7 @@ export default function Login() {
             <button onClick={()=>login()}>{IconArrowLogin}</button>
             <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
                 <p>Recebeu um convite e ainda não se cadastrou?</p>
-                <p>Clique Aqui</p>
+                <p onClick={()=> register()}>Clique Aqui</p>
             </div>
             
         </Container>

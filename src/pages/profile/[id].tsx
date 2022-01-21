@@ -43,7 +43,7 @@ export default function Profile() {
             }else{
                 let userAux:User={
                     id:+id,
-                    name:"Jolyne Kujo, A NÃO pior jojo",
+                    name:"Jolyne Cujoh, A NÃO pior jojo",
                     drinks:[],
                     description:'Jojo mais underrated da historia',
                     profileImgPath:'https://cdn.discordapp.com/attachments/469630958811742212/933154900773314611/51245626081fab919cffcd5ac31287d06b0a61bdr1-667-606v2_00.png',
