@@ -15,8 +15,14 @@ export default function Navbar() {
             <h1 className="Logo">{IconShrimpAux}</h1>
             </Link>
             <ul className="ContainerMid">
-                <li>{IconProfile}</li>
-                <li>{IconMembersTwo}</li>
+                <Link href='/profile/1' passHref>
+                    <li>{IconProfile}</li>
+                </Link>
+
+                <Link href='/' passHref>
+                    <li>{IconMembersTwo}</li>
+                </Link>
+                
                 <li>{IconWallet}</li>
                 <Link href='/drinks' passHref>
                     <li>{IconBeer}</li>

@@ -29,13 +29,37 @@ export const Container = styled.div`
   align-items: center;
   gap: 2.1rem;
   h2 {
-    font-size: 20px;
+    font-size: 2.25rem;
     color: var(--black);
     font-weight: 700;
+    width: 32vw;
+    color: var(--dark);
   }
-  img {
-    width: 7vw;
-    height: auto;
+  
+  button{
+      width: 5rem;
+      height: auto;
+      border: none;
+      background-color: inherit;
+    }
+    border: none;
+    outline: none;
+    svg{
+      width: 100%;
+      height: 100%;
+    }
+    :last-child{
+      gap: 10vh;
+    }
+  }
+  p{
+    font-size: 1.1rem;
+    :last-child{
+      margin-top: 0;
+      font-weight: 700;
+      color: var(--violet-blue);
+      cursor: pointer;
+    }
   }
 `;
 export const InputContainer = styled.div`
@@ -47,21 +71,25 @@ export const InputStructure = styled.div`
   display: flex;
   flex-direction: column;
   input {
-    border: 1px solid #07004d;
+    border: 1px solid var(--dark);
+    outline: none;
     border-radius: 6px;
-    width: 25vw;
+    width: 32vw;
     height: 5vh;
     padding: 0.5rem;
   }
   input:focus {
-    background-color: black;
+    border: 1px solid var(--violet-blue);
+    color: var(--violet-blue)
   }
   label {
-    font-size: 12px;
+    padding: .5rem;
+    font-size: 1.5rem;
     line-height: 36px;
     color: var(--black);
     :focus {
       color: var(--violet-blue);
     }
   }
+  
 `;
